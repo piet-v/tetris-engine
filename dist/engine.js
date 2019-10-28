@@ -77,8 +77,8 @@ class Engine {
    * Creates a new Shape
    */
   _newFigure() {
-    this._shape = this._nextShape ? this._nextShape : new Shape(this._shapesSet, parseInt(this.width / 2 - 3), this.height);
-    this._nextShape = new Shape(this._shapesSet, parseInt(this.width / 2 - 3), this.height);
+    this._shape = this._nextShape ? this._nextShape : new Shape(this._shapesSet, parseInt(this.width / 2 - 2), this.height);
+    this._nextShape = new Shape(this._shapesSet, parseInt(this.width / 2 - 2), this.height);
 
     let countFalledShapesByThisKind = this._statistic.countShapesFalledByType[this._shape.name];
     if(!countFalledShapesByThisKind)
